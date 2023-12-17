@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTrickster - Town</title>
+    <link rel="icon" href="assets/WebLogo.png">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script defer src="carousel-js/town-carousel.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar-container" id="nav-id">
+            <a href="home.html" id="navbar-logo">
+                <image src="assets/logos/WebLogo.png" id="logo"></image>
+            </a>
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li>
+                        <a href="home.html" class="navbar-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="game.html" class="navbar-links">Game</a>
+                    </li>
+                    <li> 
+                        <a href="town.html" class="navbar-links" id="active">Town</a>
+                    </li>
+                    <li> 
+                        <a href="signup.html" class="navbar-links">Sign Up</a>
+                    </li>
+                    <li> 
+                        <a href="support.html" class="navbar-links">Support</a>
+                    </li>
+                </ul>
+            <div class="navbar_socials">
+                <a href="https://discord.com" target="_blank">
+                    <image src="assets/logos/discordBlack.png" class="discord"></image>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <image src="assets/logos/facebookBlack.png" class="facebook_navbar"></image>
+                </a>
+            </div>
+
+             <!-- Burger Button -->
+            <div class="menu" id="toggle_button"> 
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        <!-- Burger Button -->
+        </nav>
+    </header>
+
+    <!-- CONTENT 1 -->
+    <div class="town_content1">
+        <div class="town_content1_title">
+            <h2>Veinmyst</h2>
+        </div>
+        <img src="assets/line.png" alt="" class="separator_line">
+        <div class="town_content1_text">
+            <p>You have arrived in Veinmyst — A fantasy world where the seven nations converge.
+                <br>In a distant past, the Archons granted mortals unique powers abilities. 
+                <br>With the help of such powers, people formed a bountiful homeland out of the wilderness.
+                <br>However, 500 years ago, the collapse of an ancient civilization turned the universe upside down...
+                <br>Though the calamity the world suffered has ceased, peace has yet to be restored.</p>
+        </div>
+    </div>
+
+    <!-- CONTENT 2 -->
+    <div class="town_content2">
+        <img src="assets/mondstadt-location/mondstadt_logo.png" alt="" class="town_icon">
+        <div class="town_content2_title">
+            <h2>Saint Haven</h2>
+        </div>
+        <img src="assets/line.png" alt="" class="separator_line">
+        <div class="town_content2_detail">
+            <div class="town_content2_text">
+                <p>Major city located on the east of Veinmyst. 
+                    Known as the "City of Freedom", Saint Haven is surrounded by beautiful wide-open plains with mountains in its outskirts. 
+                    <br>It is known that the scent of dandelions can be found everywhere, as it is a parting gift from the Wind Archon.</p>
+            </div>
+            <div class="town_carousel">
+                <div class="slideshow_container">
+                    <div class="game_content3_slides fade">
+                        <img src="assets/mondstadt-location/location1.jpg" class="slides_image" >
+                        <div class="caption_slides">Cider Lake</div>
+                    </div>
+                    <div class="game_content3_slides fade">
+                        <img src="assets/mondstadt-location/location2.jpg" class="slides_image">
+                        <div class="caption_slides">Falcon Coast</div>
+                    </div>
+                    <div class="game_content3_slides fade">
+                        <img src="assets/mondstadt-location/location3.jpg" class="slides_image">
+                        <div class="caption_slides">Cape Oath</div>
+                    </div>
+                    <div class="game_content3_slides fade">
+                        <img src="assets/mondstadt-location/location4.jpg" class="slides_image">
+                        <div class="caption_slides">Springvale</div>
+                    </div>
+                    <div class="game_content3_slides fade">
+                        <img src="assets/mondstadt-location/location5.jpg" class="slides_image">
+                        <div class="caption_slides">Thousand Winds Temple</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                <div class="slides_dot_container">
+                    <span class="slides_dot" onclick="currentSlide(1)"></span>
+                    <span class="slides_dot" onclick="currentSlide(2)"></span>
+                    <span class="slides_dot" onclick="currentSlide(3)"></span>
+                    <span class="slides_dot" onclick="currentSlide(4)"></span>
+                    <span class="slides_dot" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT 3 -->
+    <div class="town_content3">
+        <img src="assets/liyue-location/liyue_logo.png" alt="" class="town_icon">
+        <div class="town_content3_title">
+            <h2>Louyue Port</h2>
+        </div>
+        <img src="assets/line.png" alt="" class="separator_line">
+        <div class="town_content3_detail">
+            <div class="town_carousel">
+                <div class="slideshow_container_louyue">
+                    <div class="town_content3_slides fade">
+                        <img src="assets/liyue-location/location1.jpg" class="slides_image" >
+                        <div class="caption_slides">Qing Ce Village</div>
+                    </div>
+                    <div class="town_content3_slides fade">
+                        <img src="assets/liyue-location/location2.png" class="slides_image">
+                        <div class="caption_slides">Mt. Tiangheng</div>
+                    </div>
+                    <div class="town_content3_slides fade">
+                        <img src="assets/liyue-location/location3.jpg" class="slides_image">
+                        <div class="caption_slides">Dihua Marsh</div>
+                    </div>
+                    <div class="town_content3_slides fade">
+                        <img src="assets/liyue-location/location4.jpg" class="slides_image">
+                        <div class="caption_slides">Wangshu Inn</div>
+                    </div>
+                    <div class="town_content3_slides fade">
+                        <img src="assets/liyue-location/location5.jpg" class="slides_image">
+                        <div class="caption_slides">Jueyun Karst</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlidesLiyue(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesLiyue(1)">&#10095;</a>
+                </div>
+                
+                <div class="slides_dot_container">
+                    <span class="slides_dot_liyue" onclick="currentSlideLiyue(1)"></span>
+                    <span class="slides_dot_liyue" onclick="currentSlideLiyue(2)"></span>
+                    <span class="slides_dot_liyue" onclick="currentSlideLiyue(3)"></span>
+                    <span class="slides_dot_liyue" onclick="currentSlideLiyue(4)"></span>
+                    <span class="slides_dot_liyue" onclick="currentSlideLiyue(5)"></span>
+                </div>
+            </div>
+            <div class="town_content3_text">
+                <p>Bountiful harbor city that lies in the east of Veinmyst.
+                    <br>Its landscape is filled with roaring mountains standing tall and proud next to each other, thus garnering Louyue a nickname of "Stone Forest of the East"</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTENT 4 -->
+    <div class="town_content4">
+        <img src="assets/inazuma-location/inazuma_logo.png" alt="" class="town_icon">
+        <div class="town_content4_title">
+            <h2>Arashimura</h2>
+        </div>
+        <img src="assets/line.png" alt="" class="separator_line">
+        <div class="town_content4_detail">
+            <div class="town_content4_text">
+                <p>An isolated Archipelago located on the South Hemisphere of Veinmyst.
+                    Breakthrough barriers of thunderstorms and storms,
+                    then you will be welcomed with red maple and cherry blossoms in the sky.</p>
+            </div>
+            <div class="town_carousel">
+                <div class="slideshow_container_arashimura">
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location1.jpg" class="slides_image" >
+                        <div class="caption_slides">Ritou</div>
+                    </div>
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location2.jpg" class="slides_image">
+                        <div class="caption_slides">Arashimura City</div>
+                    </div>
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location3.jpg" class="slides_image">
+                        <div class="caption_slides">Grand Narukami Shrine</div>
+                    </div>
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location4.jpg" class="slides_image">
+                        <div class="caption_slides">Tatarasuna, Kannazuka</div>
+                    </div>
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location5.jpg" class="slides_image">
+                        <div class="caption_slides">Musoujin Gorge</div>
+                    </div>
+                    <div class="town_content4_slides fade">
+                        <img src="assets/inazuma-location/location6.jpg" class="slides_image">
+                        <div class="caption_slides">Serpent's Head</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlidesInazuma(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlidesInazuma(1)">&#10095;</a>
+                </div>
+                
+                <div class="slides_dot_container">
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(1)"></span>
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(2)"></span>
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(3)"></span>
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(4)"></span>
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(5)"></span>
+                    <span class="slides_dot_inazuma" onclick="currentSlideInazuma(6)"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer">
+        <div class="footer_text">
+            <h2>Follow&nbsp;us&nbsp;: </h2>  
+        </div>
+        <div class="footer_container">
+            <div class="icons">
+                <div>
+                    <a href="https://www.youtube.com/@BINUSOFFICIAL" target="_blank"><image class="youtube"src ="assets/logos/youtubeLogo.png"></image></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/binusuniversityofficial/" target="_blank"><image class="instagram"src ="assets/logos/instagramLogo.png"></image></a>
+                </div>
+                <div>
+                    <a href="https://www.facebook.com/universitasbinanusantara" target="_blank"><image class="facebook"src ="assets/logos/facebookLogo.png"></image></a>
+                </div>
+                <div>
+                    <a href="https://twitter.com/BINUS_UNIV" target="_blank"><image class="twitter"src ="assets/logos/twitterLogo.png"></image></a>
+                </div>
+            </div>
+
+            <ul class="footer_split">
+                <li class="footer_icon">
+                    <p class="website_rights">Copyright &copy; Stefan Bondito G. Productions</p>
+                </li>
+            </ul> 
+        </div> 
+    </div>
+    
+</body>
+</html>

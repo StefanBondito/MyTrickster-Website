@@ -1,0 +1,1472 @@
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Poppins:wght@300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Philosopher&family=Poppins:wght@300;500;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Philosopher', sans-serif;
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+
+/************************************** NAVBAR ****************************************/
+header{
+    background-color: white;
+    padding-block: 2px;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.navbar-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content:space-around;
+}
+
+#logo{
+    width: 40px;
+}
+
+.navbar-menu{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.navbar-menu li{
+    width: 125px;
+}
+
+.navbar-links{
+    color: black;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 100%;
+}
+
+.navbar-links:hover {
+    color: #00b0c7;
+}
+
+.navbar-menu .navbar-links:hover{
+    border-bottom: 4px solid #8ffff8;
+}
+
+.navbar-menu a#active{
+    font-weight: 600;
+    border-bottom: 4px solid #8ffff8;
+}
+
+.navbar_socials{
+    display: flex;
+    justify-content: space-between;
+}
+
+.discord{
+    width: 40px;
+
+}
+
+.facebook_navbar{
+    width: 40px;
+}
+
+.menu{
+    display: none;
+}
+
+.menu_line{
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 4px;
+}
+
+/************************************** HOMEPAGE ****************************************/
+/* BACKGROUND VIDEO */
+.home_content1{
+    position: relative;
+    width: 100%;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.bg_video{
+    display: flex;
+    height: 121vh;
+    background-attachment: fixed;
+    margin-top: -50px;
+
+}
+
+.home_content1_container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    top: 35%;
+    z-index: 1;
+    width: 100%;
+    padding-bottom: 8px;
+}
+
+.home_logo_container{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+}
+
+.home_logo{
+    width: 250px;
+    padding-bottom: 50px;
+}
+
+.vid_btn_container{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    width: 100%;
+    bottom: 0;
+}
+
+.vid_btn{
+    font-family: 'Philosopher', sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(236, 168, 21);
+    border: 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+}
+
+.vid_btn:hover{
+    font-weight: 600;
+    transform: scale(1.1);
+    background-color: #2cfff4;
+    color: rgb(68, 68, 68);
+}
+
+/* CONTENT 2 */
+.game_description{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9) ), url('assets/content-bg/Wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    gap: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.desc_image{
+    display: flex;
+    max-width: 350px;
+
+}
+
+.desc_text{
+    color: white;
+    justify-content: right;
+    padding: 60px 0px;
+    vertical-align: middle;
+    text-align: justify;
+    width: 100%;
+}
+
+.desc_title{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+    text-align: left;
+}
+
+.text_desc{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    max-width: 600px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+
+/* CONTENT 3 */
+.game_map{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.9) ), url('assets/content-bg/shrinebg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    gap: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.map_title{
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+}
+
+.map_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.map_picture{
+    display: flex;
+}
+
+.map_image{
+    max-width: 350px;
+    padding-left: 40px;
+    border-radius: 20px;
+}
+
+.map_text{
+    color: white;
+    justify-content: right;
+    padding: 60px 20px;
+    vertical-align: middle;
+}
+
+.map_desc{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* CONTENT 4 */
+.game_town{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6) ), url('assets/content-bg/bgmap.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    gap: 60px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.town_title{
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+}
+.game_town_container{
+    padding: 0px 40px;
+}
+
+.town_container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 70px;
+}
+
+.town_container_right{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 70px;
+}
+
+.town_picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 560px;
+}
+
+.town_image{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.town_text{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: right;
+    vertical-align: middle;
+    align-items: center;
+}
+
+.town_container h4{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+}
+
+.town_container_right h4{
+    font-family: 'Philosopher', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+}
+
+.town_desc{
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    max-width: 600px;
+    text-align: justify;
+    padding-bottom: 30px;
+}
+
+.town-btn{
+    background-color: rgb(219, 150, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    align-items: center;
+    transition: 0.5s ease;
+  }
+
+
+.town-btn:hover{
+    background-color: #ff000050;
+    color: white;
+}
+
+/* CONTENT 5 */
+.promote{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8) ), url('assets/content-bg/tesbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.promote_desc{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+    padding: 40px 40px;
+    top: 11vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 30px;
+    
+}
+
+.promote_desc{
+    color: white;
+    font-size: 48px;
+}
+
+.promote_desc h2{
+    font-family: 'Philosopher', sans-serif;
+}
+
+.promote_btn_container{
+    display: flex;
+    padding-top: 50px;
+}
+
+.promote_btn{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    background: rgb(236, 168, 21);
+    border: 0;
+    text-align: center;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.5s ease;
+
+}
+
+.promote_btn:hover{
+    transform: scale(1.1);
+    background-color: #2cfff4;
+    color: black;
+}
+
+/****************************************************************************************/
+
+/************************************** GAME.HTML ****************************************/
+/* CONTENT 1 */
+.game_content1{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2) ), url('assets/content-bg/forestbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    /* padding-top: 0px;
+    padding-bottom: 50px; */
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.game_logo{
+    width: 33%;
+}
+
+.game_content1_logo{
+    display: flex;
+    z-index: 1;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.game_content1_title{
+    text-align: center;
+    display: flex;
+
+}
+
+.game_content1_title h2{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+}
+
+.game_content1_text{
+    color: #fff;
+    font-size: 28px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+}
+
+/* CONTENT 2 */
+.game_content2{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    background-image: url('assets/content-bg/gamefeatbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.feature_heading{
+    display: flex;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 54px;
+    font-weight: 800;
+    line-height: 10vh;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 50px;
+}
+
+.feature_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+.feature_picture{
+    display: flex;
+}
+
+.feature_text_bottom{
+    margin-left: -120px;
+    margin-top: -150px;
+    background: url("assets/boxcard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    width: 375px; /* Ini ukur buat kotak text box */
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature_text_top{
+    margin-right: -120px;
+    margin-top: -150px;
+    background: url("assets/boxcard.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    width: 375px; /* Ini ukur buat kotak text box */
+    height: 331px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 6;
+}
+
+.feature_content{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.feature_content h4{
+    color: rgb(39, 19, 0);
+    text-decoration: underline;
+    font-weight: 800;
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.feature_desc{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: rgb(39, 19, 0);
+    font-weight: 500;
+}
+
+.feature_image{
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+/* CONTENT 3 */
+.game_content3{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5) ), url('assets/content-bg/barbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    gap: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.slideshow_container {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+.game_content3_slides {
+    display: none;
+  }
+
+  .slides_image{
+    width: 100%;
+  }
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:'Philosopher, sans-serif;';
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.4s ease;
+  }
+  
+.slides_dot_container{
+    text-align:center;
+}
+
+.slides_dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 3px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
+  
+.active, .slides_dot:hover {
+    background-color: #4e4e4e;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/****************************************************************************************/
+
+/************************************** TOWN.HTML ****************************************/
+/* CONTENT 1 */
+.town_content1{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.6) ), url('assets/content-bg/worldbg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding-top: 30px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.town_content1_title{
+    text-align: center;
+    display: flex;
+    
+}
+
+.town_content1_title h2{
+    color: #fff;
+    font-size: 48px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+}
+
+.separator_line{
+    padding: 20px 0;
+}
+
+.town_content1_text{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    padding: 0px 40px;
+    line-height: 1.5;
+}
+
+/* CONTENT 2 */
+.town_content2{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2) ), url('assets/mondstadt-location/mondstadt_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120vh;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.town_icon{
+    width: 12vh;
+}
+
+.town_content2_title{
+    display: flex;
+}
+
+.town_content2_title h2{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.town_content2_detail{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.town_content2_text{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 700px;
+}
+
+.caption_slides{
+    color: #f2f2f2;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 10px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(78, 78, 78, 0.4);
+  
+}
+
+/* CONTENT 3 */
+.town_content3{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2) ), url('assets/liyue-location/liyue_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120vh;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.town_icon{
+    width: 12vh;
+}
+
+.town_content3_title{
+    display: flex;
+}
+
+.town_content3_title h2{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.town_content3_detail{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.town_content3_text{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 700px;
+}
+
+/* SLIDE LOUYUE */
+.slideshow_container_louyue {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+.town_content3_slides {
+    display: none;
+  }
+
+  .slides_image{
+    width: 100%;
+  }
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:'Philosopher, sans-serif;';
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.4s ease;
+  }
+  
+.slides_dot_container{
+    text-align:center;
+}
+
+.slides_dot_liyue {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 3px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
+  
+.active, .slides_dot:hover {
+    background-color: #4e4e4e;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  /* CONTENT 4 */
+.town_content4{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2) ), url('assets/inazuma-location/inazuma_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 120vh;
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.town_icon{
+    width: 12vh;
+}
+
+.town_content4_title{
+    display: flex;
+}
+
+.town_content4_title h2{
+    color: #fff;
+    font-size: 36px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 700;
+    padding-top: 10px;
+}
+
+.town_content4_detail{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.town_content4_text{
+    text-align: center;
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    width: 700px;
+}
+
+/* ARASHIMURA SLIDESHOW */
+.slideshow_container_arashimura {
+    max-width: 900px;
+    position: relative;
+    margin: auto;
+  }
+  
+.town_content4_slides {
+    display: none;
+  }
+
+  .slides_image{
+    width: 100%;
+  }
+  
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-family:'Philosopher, sans-serif;';
+    font-size: 24px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    transition: 0.4s ease;
+  }
+  
+.slides_dot_container{
+    text-align:center;
+}
+
+.slides_dot_inazuma {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0px 3px;
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+  }
+  
+.active, .slides_dot:hover {
+    background-color: #4e4e4e;
+  }
+  
+.fade {
+    animation-name: fade;
+    animation-duration: 0.8s;
+  }
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/****************************************************************************************/
+/************************************** SIGN UP ****************************************/
+.signup-content{
+    width: 100%;
+    padding-top: 50px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.2) ), url('assets/content-bg/signupbg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+.signup-form-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: rgba(70, 70, 70, 0.418);
+    padding: 30px;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.input_sector{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 5px;
+}
+
+.form h2{
+    color: rgb(252, 238, 213);
+    font-size: 36px;
+    text-align: center;
+}
+
+.input{
+    margin: 10px;
+    width: 30vw;
+    height: 30px;
+    border: 0;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+.gender{
+    color: rgb(252, 238, 213);
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.gender_label{
+    color: rgb(252, 238, 213);
+    font-size: 16px;
+}
+.gender-category{
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    gap: 15px;
+}
+
+.checkbox_container {
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: rgb(252, 238, 213);
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Hide default checkbox */
+  .checkbox_container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .new_checkbox {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 15px;
+    width: 15px;
+    background-color: rgb(252, 238, 213);
+  }
+  
+  .checkbox_container:hover input ~ .new_checkbox {
+    background-color: rgb(255, 229, 184);
+  }
+  
+  .checkbox_container input:checked ~ .new_checkbox {
+    background-color: rgb(255, 193, 85);
+  }
+  
+  .new_checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .checkbox_container input:checked ~ .new_checkbox:after {
+    display: block;
+  }
+  
+  .checkbox_container .new_checkbox:after {
+    left: 3px;
+    top: -1px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .submit_button{
+    background-color: rgb(65, 44, 0);
+    color: rgb(252, 238, 213);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    width: fit-content;
+    align-items: center;
+    margin-top: 5px;
+    transition: 0.5s ease;
+  }
+
+
+.submit_button:hover{
+    background-color: #ffa600;
+    color: rgb(252, 238, 213);
+}
+
+/****************************************************************************************/
+/************************************** SUPPORT ****************************************/
+
+.support_content1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.support_bg_video{
+    position: relative;
+    width: 100%;
+    margin-top: 3px;
+}
+
+.support_bg_video source{
+    display: block;
+}
+
+.support_logo_container{
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    justify-content: center;
+    top: 8%;
+}
+
+.support_logo{
+    width: 15%;
+}
+
+.support_text_container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(70, 70, 70, 0.815);
+    padding: 20px;
+    top: 32%;
+    border-radius: 30px;
+    align-items: center;
+    position: absolute;
+    width: 80%;
+    
+}
+
+.support_text_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.support_text_content h4{
+    color: wheat;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.sp_separator_line{
+    width: 70%;
+    padding: 10px 0px;
+}
+
+.support_title{
+    width: 80%;
+    text-align: center;
+    color: rgb(252, 238, 213);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.support_desc{
+    width: 80%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+
+/************************************** FOOTER ****************************************/
+.footer{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    background-color: #000000;
+}
+
+.footer_container{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    width: 100%;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    color:white;
+}
+
+.footer_text{
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    padding-left: 50px;
+}
+
+.footer_split{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-size: 20px;
+    height: 60px;
+}
+
+.icons{
+    display: flex;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    background-color: black;
+    width: 50%;
+}
+
+.youtube{
+    width: 50px;
+    padding-right: 10px;
+}
+
+.instagram{
+    width: 40px;
+    padding-right: 10px;
+}
+
+.facebook{
+    width: 26px;
+    padding-right: 10px;
+}
+
+.twitter{
+    width: 47px;
+    padding-right: 10px;
+}
+
+.website_rights{
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+/****************************************************************************************/
+
+.hamburger-icon{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+
+    .navbar-container{
+        flex-direction: column;
+        position: relative;
+        align-items: normal;
+        justify-content: normal;
+    }
+    .menu{
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 12px;
+    }
+    .navbar-menu{
+        list-style-type: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 10px;
+        display: none;
+    }
+    .navbar-menu li{
+        display: block;
+        margin-top: 20px;
+    }
+    #navbar-logo{
+        margin-left: 10px;
+    }
+    .active2{
+        display: block;
+    }
+    .navbar-container li a:hover{
+        border-bottom: 4px solid #8ffff8;
+    }
+    .navbar_socials{
+        display: none;
+    }
+
+    .home_logo_container{
+        display: flex;
+        z-index: 1;
+        position: absolute;
+        justify-content: center;
+        top: 20%;
+        border: 1px solid black
+    }
+    
+    .container{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .map_container{
+        flex-direction: column;
+        gap: 0;
+        align-items: center;
+    }
+
+    .map_title{
+        text-align: center;
+        gap: 0;
+        line-height: 1;
+    }
+    .desc_text{
+        padding-top: 0;
+    }
+
+    .town_title{
+        text-align: center;
+        line-height: 1;
+    }
+
+    .town_desc{
+        text-align: center;
+    }
+
+    .town_container{
+        flex-direction: column;
+    }
+    .town_container_right{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyTrickster - Sign Up</title>
+    <link rel="icon" href="assets/logos/WebLogo.png">
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script defer src="script.js"></script>
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar-container" id="nav-id">
+            <a href="home.html" id="navbar-logo">
+                <image src="assets/logos/WebLogo.png" id="logo"></image>
+            </a>
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li>
+                        <a href="home.html" class="navbar-links">Home</a>
+                    </li>
+                    <li>
+                        <a href="game.html" class="navbar-links">Game</a>
+                    </li>
+                    <li> 
+                        <a href="town.html" class="navbar-links">Town</a>
+                    </li>
+                    <li> 
+                        <a href="signup.html" class="navbar-links" id="active">Sign Up</a>
+                    </li>
+                    <li> 
+                        <a href="support.html" class="navbar-links">Support</a>
+                    </li>
+                </ul>
+            <div class="navbar_socials">
+                <a href="https://discord.com" target="_blank">
+                    <image src="assets/logos/discordBlack.png" class="discord"></image>
+                </a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <image src="assets/logos/facebookBlack.png" class="facebook_navbar"></image>
+                </a>
+            </div>
+
+             <!-- Burger Button -->
+            <div class="menu" id="toggle_button"> 
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+                <div class="menu_line"></div>
+            </div>
+        <!-- Burger Button -->
+        </nav>
+    </header>
+    
+    <div class="signup-content">
+        <div class="signup-form-container">
+            <form action="" class="form" id="form">
+                <h2>Pre-Register Now!</h2>
+                <img src="assets/line.png" alt="" class="separator_line">
+                    <div class="input_sector">
+                        <input type="email" class="input" id="email" placeholder="Enter Your Email">
+                    </div>
+                    <p id="error-email"></p>
+
+                    <div class="input_sector">
+                        <input type="password" class="input" id="password" placeholder="Enter Your Password">
+                    </div>
+                    <p id="error-pw"></p>
+
+                    <div class="input_sector">
+                        <input type="password" class="input" id="cfpassword" placeholder="Confirm Your Password"> 
+                    </div>
+                    <p id="error-cfpw"></p>
+
+                    <div class="input_sector">
+                        <input type="text" class="input" id="age" placeholder="Enter Your Age">
+                    </div>
+                    <p id="error-age"></p>
+
+                    <div class="input_sector">
+                        <label class="gender">Select Your Gender</label>
+                        <div class="gender-category">
+                            <div class="radio-btn">
+                                <input type="radio" class="gender-btn" id="male" value="male" name="gender-button">
+                                <label for="male" class="gender_label">Male</label>
+                            </div>
+                            <div class="radio-btn">
+                                <input type="radio" class="gender-btn" id="female" value="female" name="gender-button">
+                                <label for="female" class="gender_label">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                    <p id="error-gender"></p>
+
+                    <div class="input_sector">
+                        <!-- <label for="checkbox_input" id="check_input">
+                            <input type="checkbox" name="tnc_check" id="tnc" >
+                            I have read and agreed to the Terms of Service and Privacy Policy 
+                        </label> -->
+                        <label class="checkbox_container">I have read and agree to the Terms of Service and Privacy Policy
+                            <input type="checkbox">
+                            <span class="new_checkbox" id="tnc"></span>
+                        </label>
+                    </div>
+                    <p id="error-tnc"></p>
+
+                    <div class="input_sector">
+                        <div class="submit">
+                            <input type="submit" value="Register" class="submit_button">
+                        </div>
+                    </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
