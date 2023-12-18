@@ -498,7 +498,7 @@ header{
 }
 
 .game_logo{
-    width: 33%;
+    width: 320px;
 }
 
 .game_content1_logo{
@@ -566,11 +566,20 @@ header{
     padding-bottom: 50px;
 }
 
+.feature_container_top{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
 .feature_picture{
     display: flex;
 }
 
-.feature_text_bottom{
+.feature_text{
     margin-left: -120px;
     margin-top: -150px;
     background: url("assets/boxcard.png");
@@ -805,6 +814,7 @@ header{
 
 .town_content2_detail{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     column-gap: 50px;
 }
@@ -991,6 +1001,7 @@ header{
 
 .town_content4_detail{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     column-gap: 50px;
 }
@@ -1240,12 +1251,15 @@ header{
     justify-content: center;
     width: 100%;
     flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .support_bg_video{
-    position: relative;
-    width: 100%;
-    margin-top: 3px;
+    display: flex;
+    height: 121vh;
+    background-attachment: fixed;
+    margin-top: -50px;
 }
 
 .support_bg_video source{
@@ -1269,11 +1283,11 @@ header{
     justify-content: space-evenly;
     background-color: rgba(70, 70, 70, 0.815);
     padding: 20px;
-    top: 32%;
+    top: 17%;
     border-radius: 30px;
     align-items: center;
     position: absolute;
-    width: 80%;
+    width: 75%;
     
 }
 
@@ -1288,6 +1302,7 @@ header{
     color: wheat;
     font-size: 32px;
     font-weight: bolder;
+    text-align: center;
 }
 
 .sp_separator_line{
@@ -1404,8 +1419,9 @@ header{
     .navbar-menu{
         list-style-type: none;
         width: 100%;
-        text-align: center;
+        text-align: left;
         padding-top: 10px;
+        padding-left: 30px;
         display: none;
     }
     .navbar-menu li{
@@ -1433,6 +1449,11 @@ header{
         top: 20%;
         border: 1px solid black
     }
+
+    .desc_title{
+        text-align: center;
+        padding-bottom: 30px;
+    }
     
     .container{
         flex-direction: column;
@@ -1449,7 +1470,13 @@ header{
         text-align: center;
         gap: 0;
         line-height: 1;
+        
     }
+
+    .map_text{
+        padding-top: 0px;
+    }
+
     .desc_text{
         padding-top: 0;
     }
@@ -1469,4 +1496,166 @@ header{
     .town_container_right{
         flex-direction: column;
     }
+
+    .website_rights{
+        padding-right: 30px;
+    }
+
+    .feature_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .feature_content{
+        display: flex;
+    }
+
+    .feature_content h4{
+        display: flex;
+    }
+
+    .game_content2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .feature_heading{
+        text-align: center;
+        line-height: 1;
+    }
+
+    .feature_text_top{
+        background: none;
+        background-color: rgba(70, 70, 70, 0.815);
+        padding: 0px;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 6;
+
+    }
+
+    .feature_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .feature_container_top{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .feature_picture{
+        display: flex;
+    }
+    
+    .feature_text{
+        margin-left: 0;
+        margin-top: 0;
+        background: url("assets/boxcard.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px;
+        width: 375px; /* Ini ukur buat kotak text box */
+        height: 331px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feature_text_top{
+        margin-right: 0;
+        margin-top: 0;
+        background: url("assets/boxcard.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0px;
+        width: 375px; /* Ini ukur buat kotak text box */
+        height: 331px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 6;
+    }
+    
+    .feature_content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .feature_content h4{
+        color: rgb(39, 19, 0);
+        text-decoration: underline;
+        font-weight: 800;
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .feature_desc{
+        padding: 10px 20px;
+        font-size: 20px;
+        color: rgb(39, 19, 0);
+        font-weight: 500;
+    }
+    
+    .feature_image{
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .town_content2_detail{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .town_carousel{
+        margin-bottom: 40px;
+    }
+
+    .town_content2_text{
+        width: 95%;
+    }
+
+    .town_content3_detail{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .town_content3_text{
+        width: 95%;
+    }
+
+    .town_content4_detail{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .town_content4_text{
+        width: 95%;
+    }
+    
+    .support_text_content{
+        text-align: center;
+    }
+
+    .support_text_content h4{
+        text-align: center;
+    }
+
 }
